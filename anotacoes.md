@@ -44,6 +44,8 @@ docker exec rentx cat /etc/hosts
 
 docker-compose up -d —force-recreate
 
+docker logs rentx -r
+
 npm run typeorm migration:create -- -n CreateCategories
 
 npm run typeorm migration:run
@@ -53,6 +55,12 @@ module
     - accounts
         - entities
             - 
+
+
+teste unitario
+
+
+teste de integração
 
 
 
