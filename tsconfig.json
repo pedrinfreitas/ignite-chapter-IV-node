@@ -6,10 +6,9 @@
     "baseUrl": "./src",
     "outDir": "./dist",
     "paths": {
-      "@modules/*": ["modules/*"],
       "@config/*": ["config/*"],
+      "@modules/*": ["modules/*"],
       "@shared/*": ["shared/*"],
-      "@errors/*": ["errors/*"],
       "@utils/*": ["utils/*"]
     },
     "esModuleInterop": true,
