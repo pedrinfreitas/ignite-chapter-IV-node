@@ -1,4 +1,4 @@
-import { Specification } from "../entities/Specification.entities";
+import { Specification } from "../infra/typeorm/entities/Specification.entities";
 
 interface ICreateSpecificationDTO {
     name: string;
