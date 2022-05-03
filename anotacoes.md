@@ -42,9 +42,11 @@ docker-compose start
 
 docker exec rentx cat /etc/hosts
 
-docker-compose up -d —force-recreate
+docker-compose up -d --force-recreate
 
 docker logs rentx -r
+
+//typeopm -------------------------------------------------------
 
 npm run typeorm migration:create -- -n CreateCategories
 
