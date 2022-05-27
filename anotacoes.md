@@ -27,6 +27,8 @@ docker-compose up -d
 
 docker logs name_app -f
 
+docker logs rentx -f
+
 
 *
 docker ps -a
