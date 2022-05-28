@@ -12,12 +12,16 @@ import { Connection, createConnection, getConnectionOptions } from "typeorm";
 //     });
 // });
 
-export default async (host = "database"): Promise<Connection> => {
+export default async (): Promise<Connection> => {
     const defaultOptions = await getConnectionOptions();
+    const connenctionPG = {
+        type: process.env.ENV_TYPE,
+        host: process.env.ENV_HOST,
+        port: process.env.ENV_PORT,
+        username: process.env.ENV_USERNAME,
+        password: process.env.ENV_PASSWORD,
+        database: process.env.ENV_DATABASE,
+    };
 
-    return createConnection(
-        Object.assign(defaultOptions, {
-            host,
-        })
-    );
+    return createConnection(Object.assign(defaultOptions, connenctionPG));
 };

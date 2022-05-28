@@ -18,13 +18,15 @@ class User {
     @Column()
     driver_license: string;
 
-    @Column()
+    @Column({ nullable: false, default: false })
     isAdmin: boolean;
 
     @Column()
     avatar: string;
 
-    @CreateDateColumn()
+    @CreateDateColumn({
+        default: () => "CURRENT_TIMESTAMP",
+    })
     created_at: Date;
 
     constructor() {

@@ -8,8 +8,9 @@ export class CreateCars1649470001948 implements MigrationInterface {
                 columns: [
                     {
                         name: "id",
-                        type: "uuid",
+                        type: "varchar",
                         isPrimary: true,
+                        generationStrategy: "uuid",
                     },
                     {
                         name: "name",
@@ -42,8 +43,9 @@ export class CreateCars1649470001948 implements MigrationInterface {
                     },
                     {
                         name: "category_id",
-                        type: "uuid",
+                        type: "varchar",
                         isNullable: true,
+                        generationStrategy: "uuid",
                     },
                     {
                         name: "created_at",

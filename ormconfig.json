@@ -1,16 +1,12 @@
 {
-    "type": "postgres",
-    "port": 5432,
-    "host": "localhost",
-    "username": "docker",
-    "password": "ignite",
-    "database": "rentx",
-    "migrations": [
-        "./src/shared/infra/typeorm/migrations/*.ts"
-    ],
-    "entities": [
-        "./src/modules/**/entities/*.ts"
-    ],
+    "type": "mysql",
+    "port": 3306,
+    "host": "cpl04.main-hosting.eu",
+    "username": "eupedroc_dev",
+    "password": "A?hm@($Bw?*Z",
+    "database": "eupedroc_ignite_node",
+    "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+    "entities": ["./src/modules/**/entities/*.ts"],
     "cli": {
         "migrationsDir": "./src/shared/infra/typeorm/migrations"
     }

@@ -21,6 +21,7 @@ export async function ensureAuthenticated(
 
     const [, token] = authHeader.split(" ");
 
+    // TODO: token
     try {
         const { sub: user_id } = verify(
             token,
