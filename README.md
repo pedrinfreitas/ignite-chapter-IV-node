@@ -46,7 +46,7 @@ Utilizar o multer para upload dos arquivos
 O usuario deve poder cadastrar mais de uma imagem para o mesmo carro.
 O usuario resnposavel pelo cadastro deve ser um usuario administrador.
 
-# Alugel de carro
+# Aluguel de carro
 
 **RF**
 Deve ser possivel cadastrar um aluguel.
