@@ -2,8 +2,8 @@ import { Router } from "express";
 
 import { authenticateRoutes } from "./authenticate.routes";
 import { carsRoutes } from "./cars.routes";
-import { categoryRoutes } from "./category.route";
-import { specificationRoutes } from "./specification.route";
+import { categoryRoutes } from "./category.routes";
+import { specificationRoutes } from "./specification.routes";
 import { usersRoutes } from "./users.routes";
 
 const router = Router();

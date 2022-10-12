@@ -67,5 +67,9 @@ teste unitario
 teste de integração
 
 
+useCase + spec
+    infra - Repository - inMemory
+
+
 
 
